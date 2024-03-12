@@ -1,10 +1,10 @@
 # Terraform
 
-- 1 - Criação de Bucket via terraform
+# - 1 - Criação de Bucket via terraform
       Primeiros passos ma compreenção da estrutura de arquivos
-- 2 - Modificação e destruição de Bucket via terraform
-- 3 - Criação de EC2 e variaveis via terraform
-- 4 - Interpolação, locals e outputs
+# - 2 - Modificação e destruição de Bucket via terraform
+# - 3 - Criação de EC2 e variaveis via terraform
+# - 4 - Interpolação, locals e outputs
       Criado um item dentro de um S3
       Utilizado Interpolação nos comandos
       Utilizado locals para criar variáveis locais
