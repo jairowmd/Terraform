@@ -35,4 +35,3 @@ output "ips_file_path" {
   value = "${aws_s3_bucket.this.bucket}/${aws_s3_bucket_object.this.key}"
 }
 
-# arn:aws:s3:::sincerely-naturally-greatly-learning-starfish-dev
