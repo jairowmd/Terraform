@@ -5,15 +5,15 @@
 # value = aws_s3_bucket.this.bucket: Isso atribui o nome do bucket S3 criado para o valor de saída. 
 #aws_s3_bucket.this se refere ao recurso do tipo aws_s3_bucket criado no código Terraform e .bucket é o atributo que contém o nome do bucket.
 output "bucket_name" {
- value = aws_s3_bucket.this.bucket
+  value = aws_s3_bucket.this.bucket
 }
 
 
 #value = aws_s3_bucket.this.arn: Isso atribui o Amazon Resource Name (ARN) do bucket S3 criado para o valor de saída. Assim como no exemplo anterior, 
 #aws_s3_bucket.this se refere ao recurso do tipo aws_s3_bucket criado no código Terraform e .arn é o atributo que contém o ARN do bucket.
 output "bucket_arn" {
- value = aws_s3_bucket.this.arn
- description = ""
+  value       = aws_s3_bucket.this.arn
+  description = ""
 
 }
 
@@ -21,7 +21,7 @@ output "bucket_arn" {
 #value = aws_s3_bucket.this.bucket_domain_name: Isso atribui o nome de domínio do bucket S3 criado para o valor de saída. Assim como nos exemplos anteriores,
 #aws_s3_bucket.this se refere ao recurso do tipo aws_s3_bucket criado no código Terraform e .bucket_domain_name é o atributo que contém o nome de domínio do bucket.
 output "bucket_domain_name" {
- value = aws_s3_bucket.this.bucket_domain_name
+  value = aws_s3_bucket.this.bucket_domain_name
 
 }
 

@@ -7,6 +7,21 @@ resource "aws_s3_bucket" "this" {
 
 }
 
+# importa o backup criado na mao para o gerenciamento do terraform 
+# na linha de comando depois devemos executar esse comando : terraform import aws_s3_bucket.manual meubucketcriadoconsoledaaws17032024
+resource "aws_s3_bucket" "manual" {
+  # (resource arguments)
+  bucket = "meubucketcriadoconsoledaaws17032024"
+
+  tags = {
+    Criado    = "17/03/2024"
+    importado = "17/03/2024"
+    ManagedBy = "Terraform"
+  }
+}
+
+
+
 # Subindo o arquivo ips.json para o bucket  
 resource "aws_s3_bucket_object" "this" {
   bucket = aws_s3_bucket.this.bucket
